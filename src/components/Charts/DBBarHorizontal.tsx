@@ -34,7 +34,7 @@ const DBBarHorizontal = () => {
     );
 
     return (
-        <div className=" h-[150px]">
+        <div className=" h-[300px] px-5">
             <Chart
                 options={{
                     data,

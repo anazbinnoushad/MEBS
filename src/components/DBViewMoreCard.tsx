@@ -12,10 +12,10 @@ const DBViewMoreCard = () => {
             </div>
             <div className=" flex flex-col gap-2">
                 <a className=" text-sm">Attached files</a>
-                <a className=" text-xs">
+                {/* <a className=" text-xs">
                     lorem ipsum dolor sit amet, consectetur adipiscing
-                </a>
-                <div className=" flex gap-1 text-xs items-center cursor-pointer">
+                </a> */}
+                <div className=" flex gap-1 text-xs items-center cursor-pointer text-accent">
                     <a>View in detail</a>
                     <ArrowRightIcon className=" w-3" />
                 </div>

@@ -25,14 +25,15 @@ const MEBSDropMenu = ({ children, menuList }: MEBSDropMenuProps) => {
                     {menuList?.map((item: any, idx: number) => (
                         <Menu.Item key={idx} as="div" className=" text-base uppercase cursor-pointer" onClick={() => item?.action()}>
                             {({ active }) => (
-                                <p
+                                <div
                                     className={`${active
-                                        ? "bg-[#E5E5E5] text-black text-sm  w-full p-2"
+                                        ? "bg-[#E5E5E5] text-black text-sm  p-2 rounded-md"
                                         : "p-2 text-black text-sm"
-                                        }`}
+                                        } mx-2 my-1 flex gap-2`}
                                 >
+                                    {item?.preIcon && item?.preIcon}
                                     {item?.label}
-                                </p>
+                                </div>
                             )}
                         </Menu.Item>
                     ))}

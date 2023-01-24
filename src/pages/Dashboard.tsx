@@ -30,13 +30,13 @@ const Dashboard = () => {
                     </div>
                     <DBBarChart />
                 </MEBSCard>
-                <div className=" grid grid-rows-2 gap-6">
-                    <div className=" grid grid-cols-3 gap-4">
+                <div className=" grid grid-rows-3 gap-6">
+                    <div className=" grid row-span-1 grid-cols-3 gap-4">
                         {Array(3)?.fill("_")?.map((val, index) => (
                             <DBViewMoreCard key={`DBVM_${index}`} />
                         ))}
                     </div>
-                    <MEBSCard className=" flex flex-col gap-4">
+                    <MEBSCard className=" row-span-2 flex flex-col gap-4">
                         <div className="flex gap-3 px-5 p-3 border-b">
                             <a className=" text-lg">STATISTICS</a>
                         </div>
