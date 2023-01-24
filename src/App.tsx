@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import TheLayout from './containers/TheLayout'
+import { Routes, Route } from "react-router-dom"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <div>
-        <a className=' text-7xl'>TEST TEST</a>
-      </div>
+      <Routes>
+        <Route path="/*" element={<TheLayout />} />
+      </Routes>
     </div>
   )
 }
