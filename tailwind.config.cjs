@@ -8,6 +8,7 @@ module.exports = {
         primary: "",
         sidebar: "#212943",
         contentbg: "#ECEDEF",
+        accent: "#3B81F6",
       },
     },
   },
