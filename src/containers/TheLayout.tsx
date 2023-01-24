@@ -8,7 +8,7 @@ const TheLayout = () => {
             <div>
                 <TheSidebar />
             </div>
-            <div className="grow flex flex-col relative ">
+            <div className="grow flex flex-col ">
                 <div>
                     <TheHeader />
                 </div>
