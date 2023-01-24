@@ -40,6 +40,7 @@ const DBBarHorizontal = () => {
                     data,
                     primaryAxis,
                     secondaryAxes,
+                    tooltip: false
                 }}
             />
         </div>

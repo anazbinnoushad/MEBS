@@ -32,6 +32,7 @@ const DBBarChart = () => {
                     data,
                     primaryAxis,
                     secondaryAxes,
+                    tooltip: false
                 }}
             />
         </div>

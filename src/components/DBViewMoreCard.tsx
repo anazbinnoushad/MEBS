@@ -4,9 +4,9 @@ import MEBSCard from "./MEBSComponents/MEBSCard";
 const DBViewMoreCard = () => {
     return (
         <MEBSCard className=" flex flex-col p-4 py-5 justify-between  gap-2">
-            <div className=" flex  flex-col gap-1">
+            <div className=" flex  flex-col gap-2">
                 <div className="p-2 w-fit border-2 border-accent rounded-md">
-                    <PaperClipIcon className=" w-8 stroke-accent" />
+                    <PaperClipIcon className=" w-6 stroke-accent" />
                 </div>
                 <a className=" text-lg font-semibold">3000</a>
             </div>
