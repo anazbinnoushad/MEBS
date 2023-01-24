@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         primary: "",
         sidebar: "#212943",
+        contentbg: "#ECEDEF",
       },
     },
   },
