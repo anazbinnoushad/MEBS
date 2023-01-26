@@ -1,3 +1,4 @@
+import { useState } from "react";
 import MEBSFrom from "../components/MEBSComponents/MEBSFrom";
 import MESBButton from "../components/MEBSComponents/MESBButton";
 
@@ -17,13 +18,18 @@ const fields = [
 ]
 
 const AddNewUser = () => {
+    const [data, setData] = useState<any>({})
 
     const handleSubmit = () => {
-
+        console.log(`AddNewUser,  : data`, data)
     }
     return (
         <div className="p-4 flex justify-center bg-contentbg h-full">
-            <form onSubmit={() => handleSubmit()} className=" w-full bg-white rounded-md flex justify-between flex-col">
+            <form onSubmit={(e) => {
+                e.preventDefault();
+                handleSubmit?.();
+            }}
+                className=" w-full bg-white rounded-md flex justify-between flex-col">
                 <div className=" overflow-y-scroll">
                     <div className=" p-4 px-8 border-b">
                         <a className=" text-xl font-medium">Add User</a>
@@ -33,6 +39,8 @@ const AddNewUser = () => {
                             <MEBSFrom
                                 fields={field?.fieldItems}
                                 fieldClass={field?.fieldClass}
+                                data={data}
+                                onChangeData={(data: any) => setData(data)}
                             />
                         ))}
                     </div>
@@ -42,7 +50,7 @@ const AddNewUser = () => {
                     <MESBButton text="Submit" variant="primary" type="submit" />
                 </div>
             </form>
-        </div>
+        </div >
     );
 }
 
