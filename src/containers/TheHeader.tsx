@@ -8,12 +8,12 @@ const TheHeader = () => {
     const menuList = [
         { label: "Profile", action: () => navigate(`/profile`), preIcon: <UserIcon className=" w-4" /> },
         { label: "Settings", action: () => navigate(`/settings`), preIcon: <Cog6ToothIcon className=" w-4" /> },
-        { label: "Log out", action: () => navigate(`/logout`), preIcon: <LockClosedIcon className=" w-4" /> },
+        { label: "Log out", action: () => navigate(`/`), preIcon: <LockClosedIcon className=" w-4" /> },
     ]
     return (
         <div className=" bg-white h-16 border-b px-4 flex justify-between items-center ">
             <div className=" flex gap-3">
-                <a onClick={() => navigate("/")} className=" cursor-pointer">Dashboard</a>
+                <a onClick={() => navigate("/dashboard")} className=" cursor-pointer">Dashboard</a>
                 <a onClick={() => navigate("/settings")} className=" cursor-pointer">Settings</a>
             </div>
             <div className=" flex gap-3">

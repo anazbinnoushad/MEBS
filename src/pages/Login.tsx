@@ -9,7 +9,7 @@ const Login = () => {
                 <div>
                     <a className=" text-lg font-semibold">MESB</a>
                 </div>
-                <form className=" flex flex-col gap-6 mt-5" onSubmit={() => navigate("/")}>
+                <form className=" flex flex-col gap-6 mt-5" onSubmit={() => navigate("/dashboard")}>
                     <div className="flex flex-col gap-6">
                         <MEBSInput label="Email" type="email" required={true} />
                         <MEBSInput label="Password" type="password" required={true} />

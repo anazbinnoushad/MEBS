@@ -8,7 +8,7 @@ import {
 const _nav: any = [
     {
         _tag: "NavItem",
-        path: "/",
+        path: "/dashboard",
         name: "Dashboard",
         icon: <PresentationChartBarIcon />,
     },
