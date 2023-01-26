@@ -2,7 +2,8 @@ import {
     BuildingStorefrontIcon,
     ChartBarIcon,
     ChartBarSquareIcon,
-    PresentationChartBarIcon
+    PresentationChartBarIcon,
+    UserIcon
 } from "@heroicons/react/24/outline"
 
 const _nav: any = [
@@ -11,6 +12,12 @@ const _nav: any = [
         path: "/dashboard",
         name: "Dashboard",
         icon: <PresentationChartBarIcon />,
+    },
+    {
+        _tag: "NavItem",
+        path: "/adduser",
+        name: "User",
+        icon: <UserIcon />,
     },
     {
         _tag: "NavItem",
