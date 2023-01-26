@@ -1,15 +1,15 @@
 import MEBSInput from "./MEBSInput";
 
 const MEBSFrom = ({ ...props }) => {
-    console.log(`MEBSFrom,  : Props`, props.fields)
+    // console.log(`MEBSFrom,  : Props`, props.fields)
     return (
         <div className={`capitalize  max-w-[1024px] ${props.fieldClass}`}>
-            {props?.fields?.map((field: any) => {
+            {props?.fields?.map((field: any, idx: number) => {
                 switch (field?.type) {
                     case "text":
-                        return <MEBSInput label={field?.label} type={field?.type} required={field?.required} />
+                        return <MEBSInput key={`INPL_${idx}`} label={field?.label} type={field?.type} required={field?.required} />
                     default:
-                        return <MEBSInput label={field?.label} type={field?.type} required={field?.required} />
+                        return <MEBSInput key={`DEFIN_${idx}`} label={field?.label} type={field?.type} required={field?.required} />
                 }
             })}
         </div>

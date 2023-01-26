@@ -1,12 +1,29 @@
 import { BanknotesIcon, UserGroupIcon } from "@heroicons/react/24/solid";
+import axios from "axios";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import DBBarChart from "../components/Charts/DBBarChart";
 import DBBarHorizontal from "../components/Charts/DBBarHorizontal";
 import DBLineChart from "../components/Charts/DBLineChart";
 import DBProgressCard from "../components/DBProgressCard";
 import DBViewMoreCard from "../components/DBViewMoreCard";
 import MEBSCard from "../components/MEBSComponents/MEBSCard";
+import { InitializeDashboard } from "../redux/ClientActions";
 
 const Dashboard = () => {
+    // const dispatch = useDispatch()
+    // useEffect(() => {
+    //     const fetcher = () => {
+    //         axios("https://api.coinranking.com/v2/coins/").then((response: any) => {
+    //             console.log(`Dashboard,  : RES`, response)
+    //             dispatch(InitializeDashboard(response?.data?.data))
+    //         })
+    //     }
+    //     fetcher()
+    // }, [])
+
+    // const dashboardData = useSelector((state: any) => state.Dashboard)
+    // console.log(`Dashboard,  : RES`, dashboardData)
     return (
         <div className="h-full flex flex-col gap-5 p-5 bg-contentbg overflow-y-scroll">
             <div className=" grid grid-cols-2 gap-5">
