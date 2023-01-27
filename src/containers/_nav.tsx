@@ -3,6 +3,7 @@ import {
     ChartBarIcon,
     ChartBarSquareIcon,
     PresentationChartBarIcon,
+    UserGroupIcon,
     UserIcon
 } from "@heroicons/react/24/outline"
 
@@ -16,8 +17,14 @@ const _nav: any = [
     {
         _tag: "NavItem",
         path: "/adduser",
-        name: "User",
+        name: "Add User",
         icon: <UserIcon />,
+    },
+    {
+        _tag: "NavItem",
+        path: "/users",
+        name: "Users",
+        icon: <UserGroupIcon />,
     },
     {
         _tag: "NavItem",
